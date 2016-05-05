@@ -10,7 +10,10 @@ module.exports = ->
       super objectMode: true
 
     _transform: (file, enc, next) =>
-      return @push file if file.isNull()
+      if file.isNull()
+        @push file
+        return next()
+
       return next(new PluginError('gulp-js2coffee', 'Streaming not supported')) if file.isStream()
 
       dest = gutil.replaceExtension file.path, '.coffee'
@@ -24,5 +27,6 @@ module.exports = ->
         return next error
 
       @push file
+      next()
 
   new JavascriptToCoffeeScript()
