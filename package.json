@@ -1,0 +1,42 @@
+{
+  "name": "gulp-javascript-to-coffeescript",
+  "version": "1.0.0",
+  "description": "Like gulp-coffee. But, you know, backwards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redaphid/gulp-javascript-to-coffeescript.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "coffee",
+    "coffee-script",
+    "coffeescript",
+    "js2coffee"
+  ],
+  "author": "redaphid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redaphid/gulp-javascript-to-coffeescript/issues"
+  },
+  "homepage": "https://github.com/redaphid/gulp-javascript-to-coffeescript#readme",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp-util": "^3.0.7",
+    "js2coffee": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-coverage": "^1.0.1",
+    "coffee-script": "^1.10.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "mocha-istanbul": "^0.2.0",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  }
+}
